@@ -11,10 +11,26 @@
 </head>
 <body>
     
+    <h1>Inverse your name</h1>
+
+    <div id="app">
+
+        <h2>{{ inverse }}</h2>
+
+        <input type="text" v-model="inverse">
+
+    </div>
     <script>
 
         new Vue ({
-            
+            el: '#app',
+            data: {
+                inverse: 'enter a name for inverse this'
+            }, 
+            methods : {
+                inverseName: function(){
+                }
+            }
         })
 
     </script>
