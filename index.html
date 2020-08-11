@@ -17,9 +17,12 @@
 
         <h2>{{ inverse }}</h2>
 
-        <input type="text" v-model="inverse">
+        <input type="text" v-model="inverse"> <br>
+
+        <button v-on:click="inverseName"> Reverse Letters </button>
 
     </div>
+
     <script>
 
         new Vue ({
@@ -29,6 +32,7 @@
             }, 
             methods : {
                 inverseName: function(){
+                    this.inverse = this.inverse.split('').reverse().join('');
                 }
             }
         })
